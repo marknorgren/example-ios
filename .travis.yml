@@ -2,7 +2,10 @@ osx_image: xcode8.3
 xcode_project: example-ios.xcodeproj
 xcode_scheme: example-ios
 
+
+before_install:
+  - brew install xcpretty 
+
 script:
-  - brew install xcpretty
   - set -o pipefail
   - xcodebuild -scheme example-ios -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3.1' build test | xcpretty
