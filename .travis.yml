@@ -5,4 +5,4 @@ language: objective-c
 
 script:
   - set -o pipefail
-  - xcodebuild -scheme example-ios -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3.1' build test | xcpretty
+  - xcodebuild -workspace example-ios.xcworkspace -scheme example-ios -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3.1' build test | xcpretty
