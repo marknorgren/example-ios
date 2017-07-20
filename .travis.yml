@@ -1,5 +1,5 @@
 osx_image: xcode8.3
-xcode_project: example-ios.xcodeproj
+xcode_workspace: example-ios.xcworkspace
 xcode_scheme: example-ios
 language: objective-c
 
