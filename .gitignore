@@ -70,7 +70,7 @@ fastlane/test_output
 ### Swift.SwiftPackageManager Stack ###
 Packages
 .build
-xcuserdata
+#xcuserdata
 *.xcodeproj
 
 ### Xcode ###
